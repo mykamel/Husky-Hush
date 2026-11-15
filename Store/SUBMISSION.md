@@ -62,3 +62,5 @@ Supply actual app screenshots at Apple's accepted Mac dimensions. No sign-in is 
 - Verified StoreKit transaction updates handle approval and revocation. Restore Purchase is present. No developer-operated payment server or payment-card storage.
 - Five StoreKit tests passed in Xcode using the HuskyHush-StoreKit scheme: free/price, cancellation, pending approval, restoration, and refund. The production HuskyHush scheme does not enable simulated transactions or run these environment-specific tests.
 - The app description and review notes have been updated in App Store Connect. Privacy/support pages now describe Apple purchase processing while retaining Data Not Collected for developer collection.
+
+- Final signed universal build 1.0 (3), with the fully visible two-line optional-payment disclosure, uploaded successfully in Xcode. Build 1.0 (2) was also uploaded before this layout refinement. Use build 3 for review.

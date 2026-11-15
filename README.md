@@ -28,7 +28,7 @@ App Sandbox and hardened runtime are enabled. No audio capture, network-client, 
 
 ## Website and App Store
 
-Static support/privacy pages live in docs/. GitHub Pages is configured to deploy main /docs, and both public page URLs have been verified. Store/listing.json and Store/SUBMISSION.md contain the App Store metadata and remaining release work. Free pricing is configured in App Store Connect. A signed universal 1.0 (1) archive passed Apple validation and was uploaded. The app is in Prepare for Submission; screenshots, review details, privacy agreement acceptance, device testing, and Apple review remain. This repository does not imply approval or public availability.
+Static support/privacy pages live in docs/. GitHub Pages is configured to deploy main /docs, and both public page URLs have been verified. Store/listing.json and Store/SUBMISSION.md contain the App Store metadata and remaining release work. Free pricing is configured in App Store Connect. The initial archive passed Apple validation; the latest signed universal build 1.0 (3), including optional support, was uploaded successfully. Five local StoreKit lifecycle tests passed. The app is in Prepare for Submission; screenshots, review details, privacy agreement acceptance, device testing, and Apple review remain. This repository does not imply approval or public availability.
 
 ## License
 
