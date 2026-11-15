@@ -29,12 +29,24 @@ Use listing.json for the product name, description, keywords, review notes, and 
 
 Supply actual app screenshots at Apple's accepted Mac dimensions. No sign-in is required. App Review should test the built-in microphone and confirm that unsupported hardware produces a warning. No review credentials are needed.
 
-## Still requires completion/verification
+## Completed on November 14, 2026
 
-- Verify GitHub Pages deployment and both public page URLs.
-- Create the App Store Connect app record and reserve the bundle ID if Xcode has not registered it.
-- Confirm Free pricing in App Store Connect; JSON pricing is only preparation.
-- Upload an archived distribution build, screenshots, privacy declarations, and age/export answers.
-- Verify actual silence in a meeting app with the selected supported microphone.
-- Test login, wake/device changes, and Bluetooth/USB compatibility. Intel build compilation is not Intel hardware testing.
-- Submit for Apple review and await approval. No local file or archive implies publication.
+- Repository created and full source/icon uploaded: mykamel/Husky-Hush. Local main matches GitHub main.
+- GitHub Pages enabled from main /docs with HTTPS. Privacy and support URLs opened and verified in Safari.
+- Signed universal archive 1.0 (1) created in Xcode Organizer for Intel and Apple silicon.
+- Xcode reported: Your app successfully passed all validation checks.
+- Xcode reported: Husky Hush 1.0 (1) uploaded.
+- App Store Connect app created: https://appstoreconnect.apple.com/apps/6835004758/distribution
+- Description, keywords, support URL, marketing URL, copyright, no-sign-in requirement, and review notes saved.
+- Privacy policy URL saved. Data Not Collected responses saved as a draft.
+- $0.00 base price and comparable free prices configured for 175 regions; worldwide availability configured for release.
+
+## Remaining before review submission
+
+- Apple's App Privacy Publish action requires accepting an explicit accuracy/legal-compliance agreement. It has not been accepted; responses remain a draft.
+- Add actual Mac app screenshots (accepted sizes include 1440 × 900 and 1280 × 800).
+- Complete review contact information, app category/subtitle, the age-rating questionnaire, and any remaining export-compliance questions.
+- Select the uploaded build after Apple processing completes.
+- Verify actual silence in the intended meeting app with the selected supported microphone. Hardware control values were verified; recording attenuation has not been independently measured.
+- Test login, wake/device changes, and Bluetooth/USB compatibility. Intel compilation is not Intel hardware testing.
+- Submit for Apple review and await approval. Upload and validation do not mean the app is live.
