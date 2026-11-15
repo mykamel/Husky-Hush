@@ -1,0 +1,29 @@
+{
+  "identifier": "D74BA099-AF91-4B62-B528-AD48EEA8DE11",
+  "nonRenewingSubscriptionGroups": [],
+  "products": [
+    {
+      "displayPrice": "0.99",
+      "familyShareable": false,
+      "internalID": "1139D247-CBAF-49A2-8A19-F1D985ECDA83",
+      "localizations": [
+        {
+          "description": "Optional support only. Changes FREE to PAID. All features remain free.",
+          "displayName": "Support Husky Hush",
+          "locale": "en_US"
+        }
+      ],
+      "productID": "mike.west.HuskyHush.supporter",
+      "referenceName": "Optional Supporter Badge",
+      "type": "NonConsumable"
+    }
+  ],
+  "settings": {
+    "locale": "en_US",
+    "storefront": "USA"
+  },
+  "version": {
+    "major": 4,
+    "minor": 0
+  }
+}

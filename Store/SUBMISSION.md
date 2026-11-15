@@ -25,7 +25,7 @@ In regular Xcode open HuskyHush.xcodeproj, choose the shared HuskyHush scheme an
 
 ## App Store Connect fields
 
-Use listing.json for the product name, description, keywords, review notes, and URLs. Select Free for every territory (no in-app purchases). Choose Data Not Collected in App Privacy. Complete the current age-rating questionnaire based on this microphone utility's actual content; no user-generated content, messaging, advertising, purchases, or restricted material is included. Review Apple's export-compliance questions; the app implements no custom encryption.
+Use listing.json for the product name, description, keywords, review notes, and URLs. Select Free for every territory (no in-app purchases). Choose Data Not Collected in App Privacy. Complete the current age-rating questionnaire based on this microphone utility's actual content; no user-generated content, messaging, advertising, or restricted material is included. Review Apple's export-compliance questions; the app implements no custom encryption.
 
 Supply actual app screenshots at Apple's accepted Mac dimensions. No sign-in is required. App Review should test the built-in microphone and confirm that unsupported hardware produces a warning. No review credentials are needed.
 
@@ -50,3 +50,15 @@ Supply actual app screenshots at Apple's accepted Mac dimensions. No sign-in is 
 - Verify actual silence in the intended meeting app with the selected supported microphone. Hardware control values were verified; recording attenuation has not been independently measured.
 - Test login, wake/device changes, and Bluetooth/USB compatibility. Intel compilation is not Intel hardware testing.
 - Submit for Apple review and await approval. Upload and validation do not mean the app is live.
+
+## Optional supporter purchase
+
+- Product: mike.west.HuskyHush.supporter (App Store Connect ID 6835006560).
+- One-time non-consumable, $0.99 USD base price; local equivalent shown by StoreKit.
+- Product title: Support Husky Hush.
+- Store description: Optional FREE to PAID label. All features stay free.
+- Product pricing, all-region availability, English localization, and review notes are saved in App Store Connect. It still needs its review screenshot and review submission with the app version.
+- No features depend on the purchase. The only cosmetic benefit is changing FREE to PAID in the panel header. No subscription, purchase nag, or automatic purchase prompt.
+- Verified StoreKit transaction updates handle approval and revocation. Restore Purchase is present. No developer-operated payment server or payment-card storage.
+- Five StoreKit tests passed in Xcode using the HuskyHush-StoreKit scheme: free/price, cancellation, pending approval, restoration, and refund. The production HuskyHush scheme does not enable simulated transactions or run these environment-specific tests.
+- The app description and review notes have been updated in App Store Connect. Privacy/support pages now describe Apple purchase processing while retaining Data Not Collected for developer collection.

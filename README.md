@@ -14,13 +14,17 @@ Uses public Core Audio input hardware mute where supported, otherwise writable i
 
 The app does not record audio or revoke microphone permissions. Unsupported inputs remain usable by other apps. Hot-plug, driver changes, or changes between checks can briefly pass audio. This is an input-control utility, not a security barrier. Verify your meeting app selects a supported device.
 
+## Optional support
+
+Click the FREE label to open the supporter panel. The purchase is entirely optional, one-time, and cosmetic. Restore Purchase is available. Only verified non-revoked StoreKit entitlements produce PAID. There are no microphone feature gates. The HuskyHush-StoreKit scheme enables local simulated purchases; the normal HuskyHush archive scheme does not. Tests cover free state, cancellation, pending approval, restoration, and refunds.
+
 ## Build
 
 Open HuskyHush.xcodeproj in regular Xcode. The shared HuskyHush scheme uses Debug for Run and Release for Archive. Signing team is 7WQUTHQBPG and the bundle identifier is mike.west.HuskyHush; another developer must select their own team and identifier.
 
 `./build.sh` builds a signed Release in a normal Terminal with keychain access. `scripts/archive.sh` creates the distribution archive; `scripts/export.sh` exports using ExportOptions.plist. The script pins /Applications/Xcode.app without changing global developer-tool settings. Restricted shells may be unable to see existing Xcode accounts/certificates; use the Xcode GUI in that situation rather than recreating credentials.
 
-App Sandbox and hardened runtime are enabled. No audio capture, network-client, or Accessibility entitlement is requested. The privacy manifest covers app-local preferences only. No accounts, ads, analytics, subscriptions, or third-party packages are included.
+App Sandbox and hardened runtime are enabled. No audio capture, network-client, or Accessibility entitlement is requested. The privacy manifest covers app-local preferences only. No accounts, ads, analytics, subscriptions, or third-party packages are included. The optional $0.99 USD non-consumable supporter purchase changes FREE to PAID only; every feature remains free. Apple handles purchase processing and verification.
 
 ## Website and App Store
 

@@ -9,10 +9,10 @@
   "version": "1.0",
   "copyright": "2026 Mike West",
   "keywords": "microphone,mute,menu bar,meeting,audio,privacy,input,sound",
-  "description": "Keep a microphone switch in your Mac's menu bar. Husky Hush starts in mute mode and lets you explicitly enable supported microphones when you're ready to speak.\n\n• Mute supported input devices using their hardware mute or input-volume controls.\n• See live device control values and clear warnings for unsupported microphones.\n• Restore the input settings saved before muting.\n• Return to mute mode after waking your Mac or connecting an input device.\n• Optionally open at login.\n\nFree, with no accounts, ads, subscriptions, analytics, audio recording, or network connections.\n\nCompatibility: some USB, Bluetooth, Continuity Camera/iPhone, and virtual microphones do not expose writable input controls. Husky Hush reports these devices as unsupported and cannot mute them. Device switches or changes between checks may briefly pass audio. Muting changes device input settings; it does not revoke app permissions or guarantee a system-wide privacy barrier. Other apps may still display microphone access indicators.\n\nQuitting leaves the current microphone controls unchanged. Restore them before quitting, or use macOS sound input settings when needed.",
+  "description": "Keep a microphone switch in your Mac's menu bar. Husky Hush starts in mute mode and lets you explicitly enable supported microphones when you're ready to speak.\n\n• Mute supported input devices using their hardware mute or input-volume controls.\n• See live device control values and clear warnings for unsupported microphones.\n• Restore the input settings saved before muting.\n• Return to mute mode after waking your Mac or connecting an input device.\n• Optionally open at login.\n\nEvery feature is free, with no accounts, ads, subscriptions, analytics, or audio recording. If you like the app and want to support its developer, an optional one-time $0.99 USD purchase only changes the FREE label to PAID. It unlocks no features and is never required. Apple displays the local price before purchase.\n\nCompatibility: some USB, Bluetooth, Continuity Camera/iPhone, and virtual microphones do not expose writable input controls. Husky Hush reports these devices as unsupported and cannot mute them. Device switches or changes between checks may briefly pass audio. Muting changes device input settings; it does not revoke app permissions or guarantee a system-wide privacy barrier. Other apps may still display microphone access indicators.\n\nQuitting leaves the current microphone controls unchanged. Restore them before quitting, or use macOS sound input settings when needed.",
   "privacy": "DATA_NOT_COLLECTED",
-  "reviewNotes": "Menu bar utility with a control window at launch. No account required. Test with the built-in Mac microphone. The app uses public Core Audio device properties; it never captures audio. It prefers an input hardware mute control, falling back to supported input volume controls. Unsupported devices are flagged and never represented as muted. The app is sandboxed and does not require microphone recording or Accessibility permission. Wake and device discovery select mute mode. It polls input controls and verifies property readback. Pricing must be Free. Privacy and support URLs are included in this listing. Confirm the public pages are live before submission.",
-  "submissionStatus": "BUILD_UPLOADED_PREPARE_FOR_SUBMISSION",
+  "reviewNotes": "Menu bar utility with a control window at launch. No account required. Test with the built-in Mac microphone. The app uses public Core Audio device properties; it never captures audio. It prefers an input hardware mute control, falling back to supported input volume controls. Unsupported devices are flagged and never represented as muted. The app is sandboxed and does not require microphone recording or Accessibility permission. Wake and device discovery select mute mode. It polls input controls and verifies property readback. Pricing must be Free. Privacy and support URLs are included in this listing. Confirm the public pages are live before submission. Optional non-consumable supporter product: mike.west.HuskyHush.supporter, $0.99 USD. Open it by clicking FREE in the control panel. Its only benefit is changing FREE to PAID. All features remain free. Restore Purchase is present. Review together with build 1.0 (2).",
+  "submissionStatus": "SUPPORTER_PURCHASE_BUILD_IN_PREPARATION",
   "privacyPolicyUrl": "https://mykamel.github.io/Husky-Hush/privacy.html",
   "supportUrl": "https://mykamel.github.io/Husky-Hush/support.html",
   "marketingUrl": "https://mykamel.github.io/Husky-Hush/",
@@ -20,9 +20,20 @@
   "appStoreConnectAppId": "6835004758",
   "appStoreConnectUrl": "https://appstoreconnect.apple.com/apps/6835004758/distribution",
   "archiveValidated": true,
-  "uploadedBuild": "1.0 (1)",
+  "uploadedBuild": "1.0 (2)",
   "priceConfigured": "0.00 USD; comparable free prices in 175 regions",
   "availabilityConfigured": "175 countries or regions, available on release",
   "publicPagesVerified": true,
-  "appPrivacyStatus": "Data Not Collected saved as draft; final publishing agreement not accepted"
+  "appPrivacyStatus": "Data Not Collected saved as draft; final publishing agreement not accepted",
+  "inAppPurchase": {
+    "productId": "mike.west.HuskyHush.supporter",
+    "appStoreConnectId": "6835006560",
+    "type": "NON_CONSUMABLE",
+    "priceUSD": "0.99",
+    "optional": true,
+    "onlyBenefit": "FREE label becomes PAID",
+    "status": "PRICE_LOCALIZATION_AVAILABILITY_SAVED_REVIEW_PENDING"
+  },
+  "latestSourceBuild": "1.0 (3)",
+  "purchaseTests": "5 StoreKit tests passed"
 }
