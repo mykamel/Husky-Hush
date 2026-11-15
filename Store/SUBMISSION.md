@@ -10,7 +10,7 @@ Support URL: https://mykamel.github.io/Husky-Hush/support.html
 - Project/scheme: HuskyHush (shared), macOS 14+.
 - Bundle ID: mike.west.HuskyHush.
 - Team: 7WQUTHQBPG, automatic signing.
-- Version/build: 1.0 (1), editable in target build settings.
+- Version/build: 1.0 (3), editable in target build settings.
 - Category: Utilities.
 - App Sandbox and hardened runtime enabled.
 - No audio capture, network client, or Accessibility entitlements.
@@ -25,7 +25,7 @@ In regular Xcode open HuskyHush.xcodeproj, choose the shared HuskyHush scheme an
 
 ## App Store Connect fields
 
-Use listing.json for the product name, description, keywords, review notes, and URLs. Select Free for every territory (no in-app purchases). Choose Data Not Collected in App Privacy. Complete the current age-rating questionnaire based on this microphone utility's actual content; no user-generated content, messaging, advertising, or restricted material is included. Review Apple's export-compliance questions; the app implements no custom encryption.
+Use listing.json for the product name, description, keywords, review notes, and URLs. Select Free for every territory. The optional cosmetic supporter purchase is sold separately. Choose Data Not Collected in App Privacy. Complete the current age-rating questionnaire based on this microphone utility's actual content; no user-generated content, messaging, advertising, or restricted material is included. Review Apple's export-compliance questions; the app implements no custom encryption.
 
 Supply actual app screenshots at Apple's accepted Mac dimensions. No sign-in is required. App Review should test the built-in microphone and confirm that unsupported hardware produces a warning. No review credentials are needed.
 
@@ -41,15 +41,21 @@ Supply actual app screenshots at Apple's accepted Mac dimensions. No sign-in is 
 - Privacy policy URL saved. Data Not Collected responses saved as a draft.
 - $0.00 base price and comparable free prices configured for 175 regions; worldwide availability configured for release.
 
-## Remaining before review submission
+## Submitted November 14, 2026
 
-- Apple's App Privacy Publish action requires accepting an explicit accuracy/legal-compliance agreement. It has not been accepted; responses remain a draft.
-- Add actual Mac app screenshots (accepted sizes include 1440 × 900 and 1280 × 800).
-- Complete review contact information, app category/subtitle, the age-rating questionnaire, and any remaining export-compliance questions.
-- Select the uploaded build after Apple processing completes.
-- Verify actual silence in the intended meeting app with the selected supported microphone. Hardware control values were verified; recording attenuation has not been independently measured.
-- Test login, wake/device changes, and Bluetooth/USB compatibility. Intel compilation is not Intel hardware testing.
-- Submit for Apple review and await approval. Upload and validation do not mean the app is live.
+- Apple confirmed **2 Items Submitted**: macOS version 1.0 build 3 and Optional Supporter Badge.
+- App status: **Waiting for Review**. Submission ID: 405163f5-ad01-4fa4-9db4-e68bc8bcf7b4.
+- Privacy responses published: Data Not Collected.
+- Two real app screenshots uploaded at 1440 × 900; the supporter disclosure screenshot is also attached to the IAP review information.
+- Review contact information and build 3 review notes saved in App Store Connect; private contact details are not stored here.
+- Utilities category, subtitle, content rights, and 4+ age-rating questionnaire completed.
+- Build 3 encryption declaration saved: none of the listed encryption algorithms are implemented.
+- Free app pricing and automatic release after approval retained. The purchase remains entirely optional and changes only FREE to PAID.
+- Review submission is not App Store approval or public availability.
+
+### Validation limits
+
+Hardware mute control readback and StoreKit flows were verified. Recording attenuation in a meeting app, Intel hardware, and every third-party USB/Bluetooth device have not been independently tested. Unsupported controls remain explicitly flagged.
 
 ## Optional supporter purchase
 
@@ -57,7 +63,7 @@ Supply actual app screenshots at Apple's accepted Mac dimensions. No sign-in is 
 - One-time non-consumable, $0.99 USD base price; local equivalent shown by StoreKit.
 - Product title: Support Husky Hush.
 - Store description: Optional FREE to PAID label. All features stay free.
-- Product pricing, all-region availability, English localization, and review notes are saved in App Store Connect. It still needs its review screenshot and review submission with the app version.
+- Product pricing, all-region availability, English localization, and review notes are saved in App Store Connect. Its review screenshot is attached and it was submitted with app version 1.0 build 3.
 - No features depend on the purchase. The only cosmetic benefit is changing FREE to PAID in the panel header. No subscription, purchase nag, or automatic purchase prompt.
 - Verified StoreKit transaction updates handle approval and revocation. Restore Purchase is present. No developer-operated payment server or payment-card storage.
 - Five StoreKit tests passed in Xcode using the HuskyHush-StoreKit scheme: free/price, cancellation, pending approval, restoration, and refund. The production HuskyHush scheme does not enable simulated transactions or run these environment-specific tests.
